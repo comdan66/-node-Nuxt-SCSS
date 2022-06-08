@@ -1,0 +1,42 @@
+{
+  "name": "@oawu/nuxt-scss",
+  "version": "1.0.0",
+  "description": "🔺 Nuxt.js 也要把 scss 變成 css！",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/comdan66/node-Nuxt-SCSS.git"
+  },
+  "keywords": [
+    "scss",
+    "sass",
+    "node-sass",
+    "css",
+    "Vue",
+    "Vue.js",
+    "Nuxt.js"
+  ],
+  "author": {
+    "name": "OA Wu",
+    "email": "comdan66@gmail.com",
+    "url": "https://www.ioa.tw"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/comdan66/node-Nuxt-SCSS/issues"
+  },
+  "homepage": "https://github.com/comdan66/node-Nuxt-SCSS#readme",
+  "dependencies": {
+    "@oawu/cli-progress": "^1.0.14",
+    "@oawu/helper": "^1.0.4",
+    "@oawu/queue": "^1.0.10",
+    "@oawu/scss": "^1.0.22",
+    "@oawu/xterm": "^1.0.6",
+    "chokidar": "^3.5.3",
+    "command-exists": "^1.2.9",
+    "node-notifier": "^10.0.1"
+  }
+}
