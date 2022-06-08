@@ -18,7 +18,7 @@ const startAt = Date.now()
 
 let ready = false
 
-const PathRoot = Path.resolve(__dirname, ('..' + Path.sep).repeat(0)) + Path.sep
+const PathRoot = Path.resolve(__dirname, ('..' + Path.sep).repeat(3)) + Path.sep
 const cmdColor = (desc, action = null) => desc.lightGray.dim + (action !== null ? '：'.dim + action.lightGray.dim.italic : '')
 
 Queue()
@@ -39,15 +39,15 @@ Queue()
     const rw = r | FileSystem.constants.W_OK
 
     title('檢查設定檔內容', cmdColor('執行動作', 'verify Serve\'s config file'))
-    exists(css) || mkdir(css)
+    exists(css) || mkdir(css, true)
     access(css, r) || fail(null, '沒有 ' + Path.relative(PathRoot, css) + Path.sep + ' ' + (r == rw ? '讀寫' : '讀取') + '權限')
     isDirectory(css) || fail(null, '路徑 ' + Path.relative(PathRoot, css) + Path.sep + ' 不是一個目錄')
     
-    exists(scss) || mkdir(scss)
+    exists(scss) || mkdir(scss, true)
     access(scss, rw) || fail(null, '沒有 ' + Path.relative(PathRoot, scss) + Path.sep + ' ' + (rw == rw ? '讀寫' : '讀取') + '權限')
     isDirectory(scss) || fail(null, '路徑 ' + Path.relative(PathRoot, scss) + Path.sep + ' 不是一個目錄')
 
-    exists(icon) || mkdir(icon)
+    exists(icon) || mkdir(icon, true)
     access(icon, r) || fail(null, '沒有 ' + Path.relative(PathRoot, icon) + Path.sep + ' ' + (r == rw ? '讀寫' : '讀取') + '權限')
     isDirectory(icon) || fail(null, '路徑 ' + Path.relative(PathRoot, icon) + Path.sep + ' 不是一個目錄')
     next({ css, scss, icon }, done());
