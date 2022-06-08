@@ -1,6 +1,6 @@
 {
   "name": "@oawu/nuxt-scss",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "🔺 Nuxt.js 也要把 scss 變成 css！",
   "main": "index.js",
   "scripts": {
@@ -19,9 +19,7 @@
     "Vue.js",
     "Nuxt.js"
   ],
-  "bin": {
-    "lala": "./bin.js"
-  },
+  "bin": "./bin.js",
   "author": {
     "name": "OA Wu",
     "email": "comdan66@gmail.com",

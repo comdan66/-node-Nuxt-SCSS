@@ -25,7 +25,8 @@ Queue()
   .enqueue(next => {
     process.on('SIGINT', _ => process.exit(1))
     println(`\n ${'§'.dim} ${'啟動 OA\'s Nuxt.js SCSS、icon 轉化器'.bold}`)
-    println("\n" + ' 【檢查開發環境】'.yellow)    
+    println("\n" + ' 【檢查開發環境】'.yellow)
+    next()
   })
   .enqueue(next => {
     title('檢查參數', cmdColor('執行動作', 'check argvs'))
