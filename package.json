@@ -1,6 +1,6 @@
 {
   "name": "@oawu/nuxt-scss",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "🔺 Nuxt.js 也要把 scss 變成 css！",
   "main": "index.js",
   "scripts": {
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/comdan66/node-Nuxt-SCSS.git"
+    "url": "git+https://github.com/oawu/npm-nuxt-scss.git"
   },
   "keywords": [
     "scss",
@@ -24,20 +24,20 @@
   },
   "author": {
     "name": "OA Wu",
-    "email": "comdan66@gmail.com",
+    "email": "oawu.tw@gmail.com",
     "url": "https://www.ioa.tw"
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/comdan66/node-Nuxt-SCSS/issues"
+    "url": "https://github.com/oawu/npm-nuxt-scss/issues"
   },
-  "homepage": "https://github.com/comdan66/node-Nuxt-SCSS#readme",
+  "homepage": "https://github.com/oawu/npm-nuxt-scss#readme",
   "dependencies": {
-    "@oawu/cli-progress": "^1.0.14",
-    "@oawu/helper": "^1.0.4",
-    "@oawu/queue": "^1.0.10",
-    "@oawu/scss": "^1.0.22",
-    "@oawu/xterm": "^1.0.6",
+    "@oawu/cli-progress": "^1.0.15",
+    "@oawu/helper": "^1.0.5",
+    "@oawu/queue": "^1.0.11",
+    "@oawu/scss": "^1.0.23",
+    "@oawu/xterm": "^1.0.7",
     "chokidar": "^3.5.3",
     "command-exists": "^1.2.9",
     "node-notifier": "^10.0.1"
